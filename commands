@@ -1,0 +1,44 @@
+================================================================
+
+Inserting Text
+
+i - inserts text before the current position
+I - inserts text at the beginning of the current line
+a - appends text after the current cursor position
+A - appends text to the end of the current line
+o - opens a new line below the current line
+O - opens a new line above the current line
+
+================================================================
+
+Navigating with vim
+
+================================================================
+
+Deleting Text
+
+================================================================
+
+Undoing and Repeating
+
+================================================================
+
+Searching for text
+
+================================================================
+
+Replacing text
+
+================================================================
+
+Copying moving and pasting text
+
+================================================================
+
+Changing text
+
+================================================================
+
+Saving and quitting vim
+
+================================================================
