@@ -3,16 +3,16 @@
 Modes of Operation
 
 Command Mode - 
-used for navigaton or executing editing task. 
-(Is the default mode entering vim)
+#used for navigaton or executing editing task. 
+#default mode entering vim
 
 Input/Insert mode - 
-used to enter text 
+#used to enter text 
 #can be exited by pressing the ESC key which returns you to command mode.
 
 Last Line - 
-press : to enter this mode 
-#used for commands to quit, save, etc)
+#press : to enter this mode 
+#used for commands to quit, save, etc
 
 ================================================================
 
@@ -29,6 +29,8 @@ O - opens a new line above the current line
 ================================================================
 
 Navigating within vim (command mode)
+#placing an number before command will execute that command that number of times. 
+ex: 3h will move backwards 3 characters
 
 h - moves backwards one character
 j - moves downward one line
@@ -44,7 +46,8 @@ Ctrl+b - scrolls up to the previous page
 
 ================================================================
 
-Deleting Text
+Deleting Text (Command Mode)
+#placing an number before command will execute that command that number of times. (***EXCEPT LAST COMMAND ON LIST***)
 
 x - 
 X - 
@@ -55,26 +58,26 @@ D -
 
 ================================================================
 
-Undoing and Repeating
+Undoing and Repeating (Command Mode)
 
 ================================================================
 
-Searching for text
+Searching for text (Command Mode)
 
 ================================================================
 
-Replacing text
+Replacing text (Command Mode)
 
 ================================================================
 
-Copying moving and pasting text
+Copying moving and pasting text (Command Mode)
 
 ================================================================
 
-Changing text
+Changing text (Command Mode)
 
 ================================================================
 
-Saving and quitting vim
+Saving and quitting vim (Last Line Mode)
 
 ================================================================
