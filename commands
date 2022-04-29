@@ -107,9 +107,31 @@ P - pastes yanked data above the current line.
 ================================================================
 
 Changing text (Command Mode)
+#placing an number before command will execute that command that number of times.
+#ex 2cc would change current line and the next line. 
+#ex 2r replaces the current character and the next character. 
+
+cl - changes the letter at the cursor location. 
+cw - changes the word (or part of the word) at the cursor location to the end of the word. 
+cc - changes the entire line. 
+C - changes text at the cursor position to the end of the line. 
+r - replaces the charater at the cursor location with the character entered following this command.
+R - overwrites or replaces the text on the current line. 
+J - joins the next line with the current line. 
+xp - switches the position of the character at the cursor position with the character to the right of it. 
+~ - changes the letter case (uppercase to lowercase, and vice versa) at the cursor location. 
 
 ================================================================
 
 Saving and quitting vim (Last Line Mode)
+#! (exclamation point) can be used to override the write protection placed on it by the file owner.
+
+:w - writes changes into the file without quitting vim. 
+:w file2 - writes changes into a new file called file2 without quitting vim. 
+:w! - writes changes to the file even if the file owner does not have write permissions on the file. 
+:wq - writes changes to the file and quits vim. 
+:wq! - writes changes to the file and quits vim even if the file owner does not have write permission on the file. 
+:q - quits vim if no modifications were made. 
+:q! - quits vim if modifications were made, but we do not wish to save them. 
 
 ================================================================
