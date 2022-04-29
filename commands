@@ -1,6 +1,23 @@
 ================================================================
 
-Inserting Text
+Modes of Operation
+
+Command Mode - 
+used for navigaton or executing editing task. 
+(Is the default mode entering vim)
+
+Input/Insert mode - 
+used to enter text 
+#can be exited by pressing the ESC key which returns you to command mode.
+
+Last Line - 
+press : to enter this mode 
+#used for commands to quit, save, etc)
+
+================================================================
+
+Inserting Text (input/insert mode)
+#Press ESC to exit and return to command mode
 
 i - inserts text before the current position
 I - inserts text at the beginning of the current line
@@ -11,11 +28,30 @@ O - opens a new line above the current line
 
 ================================================================
 
-Navigating with vim
+Navigating within vim (command mode)
+
+h - moves backwards one character
+j - moves downward one line
+k - moves upward one line
+l - moves forward one character
+w - moves to the start of the next word
+b - moves backward to the start of the preceding word
+e - moves to the ending character of the next word
+$ - moves to the end of the current line
+Enter - moves to the beginning of the next line
+Ctrl+f - scrolls down to the next page
+Ctrl+b - scrolls up to the previous page
 
 ================================================================
 
 Deleting Text
+
+x - 
+X - 
+dw - 
+dd - 
+D - 
+:6,12d - 
 
 ================================================================
 
