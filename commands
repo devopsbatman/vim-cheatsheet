@@ -4,14 +4,14 @@ Modes of Operation
 
 Command Mode - 
 #used for navigaton or executing editing task. 
-#default mode entering vim  
+#default mode entering vim.      
 
 Input/Insert mode - 
 #used to enter text. 
 #can be exited by pressing the ESC key which returns you to command mode.
 
 Last Line - 
-#press : to enter this mode. (referes to all commands proceeded by :)
+#press : to enter this mode. (refers to all commands proceeded by :)
 #used for commands to quit, save, etc. 
 
 ================================================================
@@ -58,17 +58,17 @@ X - deletes the character before the cursor location.
 dw - deletes the word or part of the word to the right of the cursor location. 
 dd - deletes the current line. 
 D - deletes at the cursor position to the end of the current line. 
-:6,12d - deletes lines 6 - 12. (Last Line Mode)
+:6,12d - deletes lines 6 - 12. (Last Line Mode). 
 
 ================================================================
 
 Undoing and Repeating (Command Mode)
 #placing an number before command will execute that command that number of times. (***EXCEPT U and u: COMMAND***). 
-#ex: 2u undoes the previous 2 commands
+#ex: 2u undoes the previous 2 commands. 
 
 u - undoes the previous command. 
 U - undoes all the changes done on the current line. 
-:u - undoes all the previous last mode command. (Last Line Mode)
+:u - undoes all the previous last mode command. (Last Line Mode). 
 . - repeats the last command run. 
 
 ================================================================
@@ -84,25 +84,25 @@ N - finds the previous occurence of a string (direction = backward).
 ================================================================
 
 Replacing text (Last Line Mode)
-#ex :%s/bart/Bart will replace 1st occurence with Bart
-#ex2 :%s/bart/Bart/g will replace all occurences with Bart
-#:u will undo either command
+#ex :%s/bart/Bart will replace 1st occurence with Bart. 
+#ex2 :%s/bart/Bart/g will replace all occurences with Bart. 
+#:u will undo either command. 
 
-:%s/old/new - replaces the 1st occurence of old with new in a file. 
-:%s/old/new/g - replaces all occurences of old with new in a file 
+:%s/old/new - replaces the 1st occurence of old with new in a file. (Last Line Command). 
+:%s/old/new/g - replaces all occurences of old with new in a file. (Last Line Command). 
 
 ================================================================
 
 Copying moving and pasting text (Command Mode)
 #placing an number before command will execute that command that number of times. (***EXCEPT LAST 2 COMMANDs ON LIST***).
 
-yl - yanks the current letter into buffer
-yw - yanks the curent word into buffer
-yy - yanks the current line into buffer
-p - pastes yanked data below the current line
-P - pastes yanked data above the current line
-:1,3co6 - copies lines 1-3 and pastes them after line 6 ()
-:4,6m9 - moves lines 4-6 after line 9
+yl - yanks the current letter into buffer. 
+yw - yanks the curent word into buffer. 
+yy - yanks the current line into buffer. 
+p - pastes yanked data below the current line. 
+P - pastes yanked data above the current line. 
+:1,3co6 - copies lines 1-3 and pastes them after line 6. (Last Line Command). 
+:4,6m9 - moves lines 4-6 after line 9. (Last Line Command). 
 
 ================================================================
 
