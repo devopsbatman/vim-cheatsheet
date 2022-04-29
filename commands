@@ -32,10 +32,10 @@ Navigating within vim (command mode)
 #placing an number before command will execute that command that number of times. 
 #ex: 3h will move backwards 3 characters. 
 
-h - moves backwards one character. 
-j - moves downward one line. 
-k - moves upward one line. 
-l - moves forward one character. 
+h - moves backwards one character. (can also use the back arrow)
+j - moves downward one line. (can also use the down arrow)
+k - moves upward one line. (can use the up arrow)
+l - moves forward one character. (can use the forward arrow)
 w - moves to the start of the next word. 
 b - moves backward to the start of the preceding word.    
 e - moves to the ending character of the next word. 
