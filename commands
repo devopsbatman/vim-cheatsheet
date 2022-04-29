@@ -74,10 +74,22 @@ U - undoes all the changes done on the current line.
 ================================================================
 
 Searching for text (Command Mode)
+#ex. /simpson - will search all occurences moving forward from current line. 
+
+/string - searches forward for a string. 
+?string - searches backward for a string. 
+n - finds the next occurence of a string (direction = forward). 
+N - finds the previous occurence of a string (direction = backward). 
 
 ================================================================
 
 Replacing text (Command Mode)
+#ex :%s/bart/Bart will replace 1st occurence with Bart
+#ex2 :%s/bart/Bart/g will replace all occurences with Bart
+#:u will undo either command
+
+:%s/old/new - replaces the 1st occurence of old with new in a file. 
+:%s/old/new/g - replaces all occurences of old with new in a file 
 
 ================================================================
 
