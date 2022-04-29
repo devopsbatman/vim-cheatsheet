@@ -11,7 +11,7 @@ Input/Insert mode -
 #can be exited by pressing the ESC key which returns you to command mode.
 
 Last Line - 
-#press : to enter this mode.  
+#press : to enter this mode. (referes to all commands proceeded by :)
 #used for commands to quit, save, etc. 
 
 ================================================================
@@ -58,7 +58,7 @@ X - deletes the character before the cursor location.
 dw - deletes the word or part of the word to the right of the cursor location. 
 dd - deletes the current line. 
 D - deletes at the cursor position to the end of the current line. 
-:6,12d - deletes lines 6 - 12. 
+:6,12d - deletes lines 6 - 12. (Last Line Mode)
 
 ================================================================
 
@@ -68,7 +68,7 @@ Undoing and Repeating (Command Mode)
 
 u - undoes the previous command. 
 U - undoes all the changes done on the current line. 
-:u - undoes all the previous last mode command. 
+:u - undoes all the previous last mode command. (Last Line Mode)
 . - repeats the last command run. 
 
 ================================================================
@@ -83,7 +83,7 @@ N - finds the previous occurence of a string (direction = backward).
 
 ================================================================
 
-Replacing text (Command Mode)
+Replacing text (Last Line Mode)
 #ex :%s/bart/Bart will replace 1st occurence with Bart
 #ex2 :%s/bart/Bart/g will replace all occurences with Bart
 #:u will undo either command
@@ -94,6 +94,15 @@ Replacing text (Command Mode)
 ================================================================
 
 Copying moving and pasting text (Command Mode)
+#placing an number before command will execute that command that number of times. (***EXCEPT LAST 2 COMMANDs ON LIST***).
+
+yl - yanks the current letter into buffer
+yw - yanks the curent word into buffer
+yy - yanks the current line into buffer
+p - pastes yanked data below the current line
+P - pastes yanked data above the current line
+:1,3co6 - copies lines 1-3 and pastes them after line 6 ()
+:4,6m9 - moves lines 4-6 after line 9
 
 ================================================================
 
