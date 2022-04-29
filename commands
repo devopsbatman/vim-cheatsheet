@@ -4,61 +4,72 @@ Modes of Operation
 
 Command Mode - 
 #used for navigaton or executing editing task. 
-#default mode entering vim
+#default mode entering vim  
 
 Input/Insert mode - 
-#used to enter text 
+#used to enter text. 
 #can be exited by pressing the ESC key which returns you to command mode.
 
 Last Line - 
-#press : to enter this mode 
-#used for commands to quit, save, etc
+#press : to enter this mode.  
+#used for commands to quit, save, etc. 
 
 ================================================================
 
 Inserting Text (input/insert mode)
-#Press ESC to exit and return to command mode
+#Press ESC to exit and return to command mode. 
 
-i - inserts text before the current position
-I - inserts text at the beginning of the current line
-a - appends text after the current cursor position
-A - appends text to the end of the current line
-o - opens a new line below the current line
-O - opens a new line above the current line
+i - inserts text before the current position. 
+I - inserts text at the beginning of the current line. 
+a - appends text after the current cursor position. 
+A - appends text to the end of the current line. 
+o - opens a new line below the current line. 
+O - opens a new line above the current line. 
 
 ================================================================
 
 Navigating within vim (command mode)
 #placing an number before command will execute that command that number of times. 
-ex: 3h will move backwards 3 characters
+#ex: 3h will move backwards 3 characters. 
 
-h - moves backwards one character
-j - moves downward one line
-k - moves upward one line
-l - moves forward one character
-w - moves to the start of the next word
-b - moves backward to the start of the preceding word
-e - moves to the ending character of the next word
-$ - moves to the end of the current line
-Enter - moves to the beginning of the next line
-Ctrl+f - scrolls down to the next page
-Ctrl+b - scrolls up to the previous page
+h - moves backwards one character. 
+j - moves downward one line. 
+k - moves upward one line. 
+l - moves forward one character. 
+w - moves to the start of the next word. 
+b - moves backward to the start of the preceding word.    
+e - moves to the ending character of the next word. 
+$ - moves to the end of the current line. 
+Enter - moves to the beginning of the next line. 
+Ctrl+f - scrolls down to the next page. 
+Ctrl+b - scrolls up to the previous page. 
+0 - moves to the beginning of the current line. 
+[[ - moves to the first line of the file. 
+]] - moves to the last line of the file. 
 
 ================================================================
 
 Deleting Text (Command Mode)
-#placing an number before command will execute that command that number of times. (***EXCEPT LAST COMMAND ON LIST***)
+#placing an number before command will execute that command that number of times. (***EXCEPT LAST COMMAND ON LIST***). 
+#ex: 3X will delete 3 characters before the cursor location. 
 
-x - 
-X - 
-dw - 
-dd - 
-D - 
-:6,12d - 
+x - deletes the character at the cursor position. 
+X - deletes the character before the cursor location. 
+dw - deletes the word or part of the word to the right of the cursor location. 
+dd - deletes the current line. 
+D - deletes at the cursor position to the end of the current line. 
+:6,12d - deletes lines 6 - 12. 
 
 ================================================================
 
 Undoing and Repeating (Command Mode)
+#placing an number before command will execute that command that number of times. (***EXCEPT U and u: COMMAND***). 
+#ex: 2u undoes the previous 2 commands
+
+u - undoes the previous command. 
+U - undoes all the changes done on the current line. 
+:u - undoes all the previous last mode command. 
+. - repeats the last command run. 
 
 ================================================================
 
